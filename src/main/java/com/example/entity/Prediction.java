@@ -4,8 +4,6 @@ import com.example.dto.PredictionDto;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
-
 @Getter
 @Setter
 @NoArgsConstructor
@@ -40,7 +38,7 @@ public class Prediction {
     }
 
     public boolean isOpen() {
-        return getMatch().getStartTime().isAfter(LocalDateTime.now()); // todo move logic to Match
+        return getMatch().isOpen();
     }
 
     public boolean isClosed() {

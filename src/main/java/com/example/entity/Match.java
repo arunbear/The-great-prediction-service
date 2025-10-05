@@ -26,4 +26,8 @@ public class Match {
     public Match(long id) {
         this.id = id;
     }
+
+    public boolean isOpen() {
+        return getStartTime().isAfter(LocalDateTime.now());
+    }
 }
