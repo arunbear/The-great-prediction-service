@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+@SuppressWarnings("NullAway.Init") // JPA requires no-args constructor; id is set by persistence provider
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+@SuppressWarnings("NullAway.Init") // JPA requires no-args constructor; fields set by persistence provider
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

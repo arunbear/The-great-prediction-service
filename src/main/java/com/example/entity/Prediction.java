@@ -3,7 +3,9 @@ package com.example.entity;
 import com.example.dto.PredictionDto;
 import jakarta.persistence.*;
 import lombok.*;
+import org.jspecify.annotations.Nullable;
 
+@SuppressWarnings("NullAway.Init") // JPA requires no-args constructor; fields set by persistence provider
 @Getter
 @Setter
 @NoArgsConstructor
