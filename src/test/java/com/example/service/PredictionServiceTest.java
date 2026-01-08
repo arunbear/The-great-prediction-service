@@ -25,6 +25,7 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+@SuppressWarnings("NullAway.Init")
 class PredictionServiceTest {
     @Mock
     PredictionRepository predictionRepository;
